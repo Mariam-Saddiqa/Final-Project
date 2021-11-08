@@ -2,9 +2,11 @@ import React from 'react'
 import "../App.css"
 import Searchform from './SearchForm'
 
+
 const News = ({article}) => {
     return (
         <div className="container" >
+          
           
             <h1 style={{"textAlign":"center","padding":"25px","fontWeight":"bold"}}>Top Sport News</h1>
           

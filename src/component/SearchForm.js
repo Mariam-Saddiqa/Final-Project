@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { getCode } from "country-list";
+import Carousel from './Carousel';
 
 function Searchform({ searchText }) {
   const [text, setText] = useState("");
@@ -14,6 +15,7 @@ function Searchform({ searchText }) {
 
   return (
     <div className="container" style={{ marginTop: "30px" }}>
+       <Carousel/>
       <div className="row">
         <div className="col-sm">
           <h2 style={{ textAlign: "center", fontWeight: "bold","padding":"25px" }}>

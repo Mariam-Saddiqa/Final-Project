@@ -4,9 +4,11 @@ import React from "react";
 // import Pic3 from "../pic3.jpg"
 // import { Carousel } from 'react-bootstrap'
 import CarouselVideo from "../component/CarouselVideo";
+import Footer from "../component/Footer";
 
 const Header = () => {
   return (
+    <>
     <div className="container">
       <div className="row" style={{"marginTop":"35px"}}>
         <div className="col-sm">
@@ -27,6 +29,10 @@ const Header = () => {
         </div>
       </div>
     </div>
+    <div>
+    <Footer/>
+    </div>
+    </>
   );
 };
 

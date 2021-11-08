@@ -1,10 +1,12 @@
 import React from 'react'
 import "../App.css"
 import Searchform from './SearchForm'
+import Footer from './Footer'
 
 
 const News = ({article}) => {
     return (
+      <>
         <div className="container" >
           
           
@@ -35,6 +37,10 @@ const{urlToImage,title,publishedAt,author,url}=article
     </div>
     </div>
         </div>
+        <div>
+        <Footer/>
+        </div>
+        </>
     )
 }
 

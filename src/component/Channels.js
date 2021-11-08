@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TvPlayer from "./TvPlayer";
 import SearchChannel from "./SearchChannel";
-
+import Footer from "./Footer";
 function Channels() {
   const [channels, setChannels] = useState([]);
   const [currentChannel, setCurrentChannel] = useState("");
@@ -56,6 +56,7 @@ setisTrure(true)
   }
 
   return (
+    <>
     <div className="container">
       <h1
         style={{
@@ -123,6 +124,10 @@ setisTrure(true)
         }
       </div>
     </div>
+    <div>
+    <Footer/>
+    </div>
+    </>
   );
 }
 

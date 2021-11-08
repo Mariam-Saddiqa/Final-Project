@@ -1,6 +1,7 @@
 import React from "react";
 import contact from "../Contact2.png";
 import emailjs from "emailjs-com";
+import Footer from "./Footer";
 
 const Contact = () => {
   function sendEmail(e){
@@ -16,6 +17,7 @@ const Contact = () => {
       alert("Message Sent");
   }
   return (
+    <>
     <div className="container">
       <div className="row">
         <div className="col-sm" style={{ "textAlign": "center" }}>
@@ -88,7 +90,14 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      
+      
     </div>
+    <div>
+    <Footer/>
+    </div>
+    </>
+    
   );
 };
 
